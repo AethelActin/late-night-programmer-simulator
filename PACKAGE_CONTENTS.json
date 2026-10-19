@@ -21,8 +21,8 @@
     },
     {
       "path": "LateNightProgrammerSimulator-public.spec",
-      "bytes": 983,
-      "sha256": "356373448ad1b76f463f2c0ba961e40d454aa740779a2a9bd6ea4d2644a1b1b1"
+      "bytes": 1022,
+      "sha256": "345a7aebd7ce27e8e52fc0dcdd48c711af286f25ca05f33084105e01075a2323"
     },
     {
       "path": "LateNightProgrammerSimulator.spec",
@@ -31,13 +31,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5206,
-      "sha256": "831f98bd8ae0306178da5c5e0c3eaec689433875a5a0a0cade23d1cc7092ff8e"
+      "bytes": 5277,
+      "sha256": "fc7cada744fbf17820bb42f20450ad36ee8dbc52a8614cb9fd92ab4441a65e41"
     },
     {
       "path": "RIGHTS.md",
-      "bytes": 1727,
-      "sha256": "f40520fbfa7dbb74562617306ccbb53df211165b2d05d647ab39796aaed27fc6"
+      "bytes": 1907,
+      "sha256": "a24944f7c6700ab9c13a4f51461c4f030479634587dd41b7dd07d3d50b77aac4"
     },
     {
       "path": "SPRITE_RULES.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "docs/GITHUB_RELEASE.md",
-      "bytes": 5483,
-      "sha256": "a913c96cf97bd687411734f95b27c5eeaa092d1e0b388301e19e5313d4a7c1a6"
+      "bytes": 5510,
+      "sha256": "cd5ef50db57036c2b6f38aff7a3ddb95d8d58cd29cade22f89d686515ebe2d85"
     },
     {
       "path": "docs/PLATFORM_COOPERATION.md",
@@ -71,13 +71,13 @@
     },
     {
       "path": "docs/PROJECT.md",
-      "bytes": 18047,
-      "sha256": "e21dcc8249e3142c348cc6f2997ee93cc53cab74f33f1de7c7632a069446b52e"
+      "bytes": 18676,
+      "sha256": "df6c7ac48af1ab3c4a98e01f767e878a05a20b2962095cb8759d0bace1ff997e"
     },
     {
       "path": "docs/RELEASE_NOTES_v0.1.0-preview.md",
-      "bytes": 2015,
-      "sha256": "bbabaaddef955acd59623cdbec7de86b5522d74afdc7188f85687ea36a9ca5a5"
+      "bytes": 2105,
+      "sha256": "d5969a4107cff202532c7ec42d1211e02eca6b1b2a875f3b48ff1278750165e1"
     },
     {
       "path": "docs/screenshots/README.md",
@@ -101,13 +101,13 @@
     },
     {
       "path": "docs/screenshots/menu-en.png",
-      "bytes": 268939,
-      "sha256": "d259eeb2c3d844b8cdda5f9234de687245c71ef076a3b6a312bc8df5412bff33"
+      "bytes": 269099,
+      "sha256": "1224271264f75dc1f38d4a606360cf6345d7509d1c2b3f44f23c6c7cd94abeeb"
     },
     {
       "path": "docs/screenshots/menu-zh.png",
-      "bytes": 274824,
-      "sha256": "3960ecae52f596d95ac8fa3c1013a5442f0f1afb56cf513c83e85e01eacc3115"
+      "bytes": 275225,
+      "sha256": "dd7d5e35cb1c5cb5f957bf39bea64ed51264fb73fb7c4f341c816f871d61b6a6"
     },
     {
       "path": "docs/screenshots/pause-zh.png",

@@ -17,7 +17,7 @@ Windows 玩家下载附件 `LateNightProgrammerSimulator.exe` 后双击运行，
 
 ## 已知限制
 
-- 当前公开版没有背景配乐，未包含原项目中的第三方歌曲。
+- 按作者要求保留原版场景配乐；曲目属于各自权利人，试玩不授予音乐的独立使用许可。
 - 没有存档、账号、联网、广告或真实 AI 调用；关闭后进度不保留。
 - 未签名；只在本机 Windows 11 x64 检查，低配电脑、其他系统未验证。
 - 长时段的实际局长受随机事件影响，动画转场和性能仍可改进。
@@ -25,8 +25,8 @@ Windows 玩家下载附件 `LateNightProgrammerSimulator.exe` 后双击运行，
 
 ## 验证
 
-本机完整环境 28 项回归通过。公开 EXE 离屏自检退出码 0；包内检查确认没有 MP3 或 Zpix，包含 Fusion Pixel 与许可文本。源码展示副本不含运行素材，其 4 项图形检查会标记 skipped，不能算作通过。远程 CI 的结果请查看仓库 Actions。
+本机完整环境 28 项回归通过。公开 EXE 离屏自检退出码 0；包内检查确认保留 7 首原配乐、未包含 Zpix，包含 Fusion Pixel 与许可文本。源码展示副本不含运行素材，其 4 项图形检查会标记 skipped，不能算作通过。远程 CI 的结果请查看仓库 Actions。
 
-EXE SHA-256：`64548ae1ca00143bcf9edeba343af4a2e524d4defd6121acb3f14a6cca0bfef6`。
+EXE SHA-256：`b2f047835564a5832cba3c94b007c46a584abfe32413583a1bfccabc50325270`。
 
 许可文本见附件 `THIRD_PARTY_LICENSES.zip` 和仓库 `licenses/`。欢迎通过 Issues 提交复现步骤；本项目暂未选择通用开源许可证。

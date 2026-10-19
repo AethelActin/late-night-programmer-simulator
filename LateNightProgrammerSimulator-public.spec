@@ -1,5 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
-# Public experimental build: no third-party music or Zpix font.
+# Public experimental build: original soundtrack, OFL fonts.
 
 a = Analysis(
     ['main.py'],
@@ -7,6 +7,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('assets/images', 'assets/images'),
+        ('assets/audio', 'assets/audio'),
         ('assets/fonts/PressStart2P-Regular.ttf', 'assets/fonts'),
         ('assets/fonts/FusionPixel10.ttf', 'assets/fonts'),
         ('assets/icon.ico', 'assets'),

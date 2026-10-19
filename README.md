@@ -8,7 +8,7 @@
 
 **[下载 Windows EXE 试玩](https://github.com/AethelActin/late-night-programmer-simulator/releases/download/v0.1.0-preview/LateNightProgrammerSimulator.exe)** · [版本说明与附件](https://github.com/AethelActin/late-night-programmer-simulator/releases/tag/v0.1.0-preview) · [反馈问题](https://github.com/AethelActin/late-night-programmer-simulator/issues)
 
-美术动画由作者使用 Google 视频生成工具生成短片后剪辑、抽帧和接入。当前公开试玩版不附带原项目的第三方背景音乐，使用 OFL 授权的 Press Start 2P 和 Fusion Pixel 字体，并附许可文本。代码和素材范围见 [RIGHTS.md](RIGHTS.md)。
+美术动画由作者使用 Google 视频生成工具生成短片后剪辑、抽帧和接入。当前公开试玩版按作者要求保留原项目配乐，使用 OFL 授权的 Press Start 2P 和 Fusion Pixel 字体，并附字体许可文本。代码和素材范围见 [RIGHTS.md](RIGHTS.md)。
 
 仓库包含源码、事件数据、文档、截图和第三方许可；原始动画和字体没有放进源码仓库。**普通玩家请下载 Releases 中的 EXE**，无需配置 Python 或素材。只下载 Source code ZIP 的开发者需先按[素材说明](docs/ASSET_SETUP.md)配置资源。
 
@@ -21,7 +21,7 @@
 - 菜单可切换中英文、音乐开关。选择时长后进入游戏；事件选项可点击，不操作约 8 秒后中性关闭。
 - `Esc` 或左下角退出按钮打开返回菜单确认框，确认期间局内暂停。理智耗尽或进度达到 100% 后仍可返回菜单重开。
 - 没有存档、账号、联网、广告或真实 AI 调用；退出程序后不保留进度。
-- 公开版没有背景配乐；音乐控制在没有音频资源时不可用。
+- 保留原版场景配乐，可在开始菜单切换音乐开关。
 
 ## 源码运行
 
