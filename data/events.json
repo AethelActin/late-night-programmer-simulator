@@ -1,0 +1,644 @@
+{
+  "events": [
+
+    // ═══════════════════════════════════════
+    // SPRITE-DRIVEN EVENTS
+    // ═══════════════════════════════════════
+
+    {
+      "id": "cat_on_keyboard",
+      "title": "Cat on Keyboard",
+      "text": "The cat walks directly onto the keyboard.\n\nasdjkhfkjashf\n\nPurring intensifies.\n\nBetter get him off the desk.",
+      "type": "cozy",
+      "animation": "cat_wake",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 5 },
+      "weight": 15
+    },
+
+    {
+      "id": "drink",
+      "title": "Coffee O'Clock",
+      "text": "The cup is empty.\nThere is another cup.\nThe cycle continues.",
+      "type": "cozy",
+      "animation": "drink",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 8, "sanity": 8 },
+      "weight": 15
+    },
+
+    {
+      "id": "phone_doomscroll",
+      "title": "Just One More Reel",
+      "text": "Just one more reel.\n\n...\n\nJust one more reel.",
+      "type": "distraction",
+      "animation": "phone",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [
+        { "text": "Put it down",      "effects": { "vibe": 3,  "sanity": 6,  "progress": 0  } },
+        { "text": "Keep scrolling",   "effects": { "vibe": -5, "sanity": -5, "progress": -8 } }
+      ],
+      "weight": 15
+    },
+
+    {
+      "id": "drowsy",
+      "title": "The Eyes Are Closing",
+      "text": "It's 2:47 AM.\nYou are not tired.\n\nYou are definitely not tired.",
+      "type": "doom",
+      "animation": "drowsy",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [
+        { "text": "Drink coffee",  "effects": { "vibe": 5,  "sanity": 8  } },
+        { "text": "Embrace it",    "effects": { "vibe": -8, "sanity": -8, "progress": -8 } }
+      ],
+      "weight": 8
+    },
+
+    {
+      "id": "inspiration",
+      "title": "Eureka",
+      "text": "Wait.\nWait wait wait.\n\nYou know exactly how to fix this.",
+      "type": "cozy",
+      "animation": "excited",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 12, "sanity": 15, "progress": 12 },
+      "weight": 6
+    },
+
+    {
+      "id": "ai_stuck",
+      "title": "AI Is Thinking",
+      "text": "Generating response...\n\nGenerating response...\n\nGenerating response...",
+      "type": "tech",
+      "animation": "scratch",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [
+        { "text": "Wait patiently",  "effects": { "sanity": -3              } },
+        { "text": "Refresh",         "effects": { "vibe": -5, "sanity": -5 } }
+      ],
+      "weight": 15
+    },
+
+    {
+      "id": "windows_update",
+      "title": "Restart Required",
+      "text": "Windows wants to install updates.\n\nNow.\n\nIt always wants to do it now.",
+      "type": "tech",
+      "animation": "scratch",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [
+        { "text": "Postpone (again)",  "effects": { "sanity": -5                        } },
+        { "text": "Restart now",       "effects": { "vibe": -15, "progress": -25        } }
+      ],
+      "weight": 8
+    },
+
+    {
+      "id": "refactor_impulse",
+      "title": "This Code Is Ugly",
+      "text": "You stare at the function.\nThe function stares back.\n\nThis code is ugly.",
+      "type": "tech",
+      "animation": "scratch",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [
+        { "text": "Ignore it",           "effects": { "sanity": -3                              } },
+        { "text": "Rewrite everything",  "effects": { "vibe": 10, "progress": -20, "sanity": -10 } }
+      ],
+      "weight": 12
+    },
+
+    {
+      "id": "rain_starts",
+      "title": "It's Raining",
+      "text": "Rain starts hitting the window.\nThe room suddenly feels smaller.\n\nAnd warmer.",
+      "type": "cozy",
+      "animation": "rain",
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 8, "world_state": "rain" },
+      "weight": 20
+    },
+
+    {
+      "id": "rain_cat_wakes",
+      "title": "The Cat Noticed the Rain",
+      "text": "The cat opens one eye.\nLooks at the window.\nLooks at you.\n\nBack to the window.",
+      "type": "cozy",
+      "animation": "rain_cat_wake",
+      "domain": "rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 6 },
+      "weight": 60
+    },
+
+    {
+      "id": "rain_stops",
+      "title": "The Rain Softens",
+      "text": "The rain begins to fade.\nThe window clears.\n\nRoom sounds different without it.",
+      "type": "cozy",
+      "animation": "rain_stop",
+      "domain": "rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "world_state": "no_rain" },
+      "weight": 18
+    },
+
+    // ═══════════════════════════════════════
+    // POPUP EVENTS — NO RAIN ONLY
+    // ═══════════════════════════════════════
+
+    {
+      "id": "keyboard_asmr",
+      "title": "Mechanical Keyboard ASMR",
+      "text": "The keyboard sounds extra satisfying tonight.\n\nClick.\nClack.\nClick.",
+      "type": "cozy",
+      "animation": null,
+      "domain": "no_rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 8, "audio": "keyboard_crisp" },
+      "weight": 15
+    },
+
+    // ═══════════════════════════════════════
+    // POPUP EVENTS — BOTH DOMAINS
+    // ═══════════════════════════════════════
+
+    {
+      "id": "youtube_recommendation",
+      "title": "YouTube Recommends",
+      "text": "\"Why Japanese Programmers Are Switching To Vim\"\n\n8.2M views.",
+      "type": "distraction",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [
+        { "text": "Watch",          "effects": { "vibe": 5,  "progress": -4               } },
+        { "text": "Resist",         "effects": { "sanity": 6                              } },
+        { "text": "Open 4 tabs",   "effects": { "vibe": 8,  "progress": -12, "sanity": -5 } }
+      ],
+      "weight": 15
+    },
+
+    {
+      "id": "stackoverflow_savior",
+      "title": "Stack Overflow Saves the Day",
+      "text": "A 7-year-old answer.\n3 upvotes. Accepted.\n\nIt solves your exact problem.",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 12, "sanity": 15, "progress": 8 },
+      "weight": 8
+    },
+
+    {
+      "id": "rain_heavier",
+      "title": "Rain Gets Heavier",
+      "text": "Rain starts hitting the window harder.\nThe room suddenly feels smaller.",
+      "type": "cozy",
+      "animation": null,
+      "domain": "rain",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 5, "audio": "rain_heavy" },
+      "weight": 20
+    },
+
+    {
+      "id": "lofi_hits",
+      "title": "This Track Hits Different",
+      "text": "This song suddenly feels like the meaning of life.\n\nYou are not crying.\nYou are not crying.",
+      "type": "cozy",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 12 },
+      "weight": 12
+    },
+
+    {
+      "id": "monitor_glow",
+      "title": "Warm Monitor Glow",
+      "text": "The monitor glow feels strangely comforting.\n\nMaybe this is home.",
+      "type": "cozy",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 6, "visual": "warm_glow" },
+      "weight": 20
+    },
+
+    {
+      "id": "twitter_spiral",
+      "title": "One Minute on Twitter",
+      "text": "You blink.\n\n17 minutes disappeared.",
+      "type": "distraction",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "progress": -10, "vibe": -3 },
+      "weight": 12
+    },
+
+    {
+      "id": "steam_sale",
+      "title": "Steam Sale",
+      "text": "A game you will never play is 90% off.\n\nThe offer expires in 02:14:33.",
+      "type": "distraction",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [
+        { "text": "Buy it",   "effects": { "vibe": 10, "sanity": -3 } },
+        { "text": "Ignore",   "effects": { "sanity": 5              } }
+      ],
+      "weight": 8
+    },
+
+    {
+      "id": "npm_collapse",
+      "title": "npm Install",
+      "text": "Installing dependencies...\n\nadded 842 packages in 23s\n\n⚠ 142 vulnerabilities found",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "sanity": -5 },
+      "weight": 12
+    },
+
+    {
+      "id": "rewrite_in_rust",
+      "title": "Maybe I Should Rewrite This in Rust",
+      "text": "Python is slow.\nRust is fast.\nYou have never written Rust.\n\n...How hard can it be?",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [
+        { "text": "Stay in Python",        "effects": { "sanity": 3                             } },
+        { "text": "Open a Rust tutorial",  "effects": { "vibe": 5, "progress": -15, "sanity": -5 } }
+      ],
+      "weight": 8
+    },
+
+    {
+      "id": "todo_breeding",
+      "title": "TODO Breeding",
+      "text": "# TODO: fix this\n# TODO: fix that\n# TODO: what is this\n# TODO: why did I do this\n# TODO: future me's problem",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "sanity": -3, "vibe": 3 },
+      "weight": 12
+    },
+
+    {
+      "id": "ai_hallucination",
+      "title": "AI Speaks",
+      "text": "You asked for help with your function.\n\nThe AI replied:\n\"Have you considered becoming a goat farmer?\"",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "sanity": -3, "vibe": 5 },
+      "weight": 12
+    },
+
+    {
+      "id": "github_stars",
+      "title": "38k GitHub Stars",
+      "text": "This project has 38,000 stars.\nThey built it in a weekend.\n\nYou stare at the screen for a while.",
+      "type": "distraction",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [
+        { "text": "Get inspired",  "effects": { "vibe": 5,  "sanity": 8, "progress": 4 } },
+        { "text": "Close the tab", "effects": { "sanity": 3               } }
+      ],
+      "weight": 8
+    },
+
+    {
+      "id": "package_success",
+      "title": "It Actually Installed",
+      "text": "Successfully installed hope-0.1.2\nSuccessfully installed clarity-3.0.1\nSuccessfully installed tomorrow-1.0.0",
+      "type": "tech",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 12, "sanity": 8 },
+      "weight": 10
+    },
+
+    // ═══════════════════════════════════════
+    // META EVENTS — LOW SANITY REQUIRED
+    // ═══════════════════════════════════════
+
+    {
+      "id": "code_speaks",
+      "title": "The Code Is Speaking",
+      "text": "print(\"why are you still awake\")\n\nYou didn't write that line.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -5, "vibe": 8 },
+      "weight": 5
+    },
+
+    {
+      "id": "compile_eta",
+      "title": "Estimated Time Remaining",
+      "text": "Compile ETA:\n\n482 years",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -3, "vibe": 5 },
+      "weight": 6
+    },
+
+    {
+      "id": "fake_discord",
+      "title": "New Message",
+      "text": "bro are you alive\n\n...\n\nYou check Discord.\nNo new messages.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -5 },
+      "weight": 5
+    },
+
+    {
+      "id": "cat_stare",
+      "title": "The Cat Is Watching",
+      "text": "The cat is looking directly at you.\n\nIt does not blink.\n\nIt knows.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -5, "vibe": 5 },
+      "visual": "freeze_4s",
+      "weight": 5
+    },
+
+    {
+      "id": "window_reflection",
+      "title": "Something in the Window",
+      "text": "For a second,\nyou thought someone was behind you.\n\nThere is nothing behind you.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -8 },
+      "visual": "screen_flash",
+      "weight": 4
+    },
+
+    {
+      "id": "cursor_stops",
+      "title": "The Cursor Stopped Blinking",
+      "text": "The cursor has stopped blinking.\n\nThe room is very quiet.\n\nYou wait.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -5 },
+      "visual": "cursor_freeze",
+      "weight": 4
+    },
+
+    {
+      "id": "ai_self_aware",
+      "title": "AI Becomes Self-Aware",
+      "text": "Generating response...\n\nGenerating response...\n\nI don't know either.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -8, "vibe": 10 },
+      "weight": 4
+    },
+
+    {
+      "id": "ai_sigh",
+      "title": "AI's Sigh",
+      "text": "\"Don't worry, I'll help you fix this.\"\n\nYou wait.\n\nThe AI stares at your codebase.\n\nIt sighs.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -5, "vibe": 8 },
+      "weight": 6
+    },
+
+    {
+      "id": "ai_no_idea",
+      "title": "No Idea",
+      "text": "\"I'll give you the most direct, complete, no-bullshit answer...\"",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "sanity": -8, "vibe": 3 },
+      "weight": 5
+    },
+
+    {
+      "id": "night_philosophy",
+      "title": "Deep Thought",
+      "text": "Maybe the bug was never in the code.",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 70 },
+      "choices": [],
+      "effects": { "vibe": 5, "sanity": 3 },
+      "weight": 6
+    },
+
+    // ═══════════════════════════════════════
+    // LOW SANITY EVENTS (sanity ≤ 20)
+    // ═══════════════════════════════════════
+
+    {
+      "id": "low_sanity_how_long",
+      "title": "…",
+      "text": "How long has it been since you last slept?",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 20 },
+      "choices": [],
+      "effects": { "sanity": -2, "vibe": 3 },
+      "weight": 30
+    },
+
+    {
+      "id": "low_sanity_window",
+      "title": "…",
+      "text": "Was the window different just now?",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 20 },
+      "choices": [],
+      "effects": { "sanity": -3, "vibe": 5 },
+      "weight": 30
+    },
+
+    {
+      "id": "low_sanity_goal",
+      "title": "…",
+      "text": "Do you remember what the project was supposed to do?",
+      "type": "meta",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "sanity_max": 20 },
+      "choices": [],
+      "effects": { "sanity": -4, "vibe": 5 },
+      "weight": 30
+    },
+
+    // ═══════════════════════════════════════
+    // RARE EVENTS
+    // ═══════════════════════════════════════
+
+    {
+      "id": "ai_actually_worked",
+      "title": "Wait. It Actually Works.",
+      "text": "You run the code.\n\nNo errors.\n\nYou run it again.\n\nStill no errors.\n\n...You don't trust this.",
+      "type": "rare",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 15, "sanity": 15, "progress": 15 },
+      "weight": 2
+    },
+
+    {
+      "id": "everything_works",
+      "title": "No Errors. No Warnings.",
+      "text": "No errors.\nNo warnings.\nNo bugs.\n\nThis has never happened before.\nThis will never happen again.",
+      "type": "rare",
+      "animation": null,
+      "domain": "both",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 18, "sanity": 20, "progress": 20 },
+      "weight": 1
+    },
+
+    {
+      "id": "the_perfect_vibe",
+      "title": "The Perfect Vibe",
+      "text": "The music is right.\nThe cat is asleep.\nThe rain is steady.\n\nNothing needs to be fixed right now.",
+      "type": "rare",
+      "animation": null,
+      "domain": "rain",
+      "requirements": { "vibe_min": 70 },
+      "choices": [],
+      "effects": { "vibe": 15 },
+      "visual": "perfect_vibe_10s",
+      "weight": 2
+    },
+
+    {
+      "id": "sunrise",
+      "title": "Sunrise",
+      "text": "The window is getting lighter.\n\nThe rain stopped.\nThe music slows.\n\nYou made it.",
+      "type": "rare",
+      "animation": null,
+      "domain": "both",
+      "requirements": { "progress_min": 80 },
+      "choices": [],
+      "effects": { "vibe": 20, "progress": 10, "world_state": "sunrise" },
+      "weight": 1
+    },
+
+    // ═══════════════════════════════════════
+    // DONE EVENTS
+    // ═══════════════════════════════════════
+
+    {
+      "id": "done_question",
+      "title": "It's Done.",
+      "text": "My project compiled.\n\n...Yours?",
+      "type": "meta",
+      "animation": null,
+      "domain": "done",
+      "severity": "major",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 5 },
+      "weight": 30
+    },
+
+    {
+      "id": "done_still_watching",
+      "title": "Still Here?",
+      "text": "I'm done.\n\nNo credits.\nThe window doesn't close.\n\nWhat are you looking at?",
+      "type": "meta",
+      "animation": null,
+      "domain": "done",
+      "severity": "major",
+      "requirements": {},
+      "choices": [],
+      "effects": {},
+      "weight": 30
+    },
+
+    {
+      "id": "done_ai_joke",
+      "title": "AI Thoughts",
+      "text": "Hasn't your AI finished your work yet?",
+      "type": "meta",
+      "animation": null,
+      "domain": "done",
+      "severity": "major",
+      "requirements": {},
+      "choices": [],
+      "effects": { "vibe": 3 },
+      "weight": 30
+    }
+
+  ]
+}

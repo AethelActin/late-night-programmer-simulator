@@ -1,0 +1,238 @@
+{
+  "project": "late-night-programmer-simulator",
+  "version": "0.1.0-preview",
+  "scope": "source showcase; original runtime assets are excluded",
+  "game_assets_included": false,
+  "runnable_without_assets": false,
+  "executable_included": false,
+  "original_git_history_included": false,
+  "code_license_selected": false,
+  "exporter_performs_upload": false,
+  "files": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 708,
+      "sha256": "64feb5719011f006bd3d0a38bf85f3b6e2736544ef2585cb7a76391f42a15517"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 85,
+      "sha256": "88a0731cd5f613686aad85521d48d9fde8102a1ab1aed51e013340a8ad733213"
+    },
+    {
+      "path": "LateNightProgrammerSimulator-public.spec",
+      "bytes": 983,
+      "sha256": "356373448ad1b76f463f2c0ba961e40d454aa740779a2a9bd6ea4d2644a1b1b1"
+    },
+    {
+      "path": "LateNightProgrammerSimulator.spec",
+      "bytes": 789,
+      "sha256": "7e2497eb81d85f62758e96f8abf55b442f42294377cfb5032b30069bd8f75509"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5206,
+      "sha256": "831f98bd8ae0306178da5c5e0c3eaec689433875a5a0a0cade23d1cc7092ff8e"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1727,
+      "sha256": "f40520fbfa7dbb74562617306ccbb53df211165b2d05d647ab39796aaed27fc6"
+    },
+    {
+      "path": "SPRITE_RULES.md",
+      "bytes": 2478,
+      "sha256": "5edf96bb84458dac2916b68d2ecb3f26a9b132f1558406ef471474aff20f88b6"
+    },
+    {
+      "path": "data/ambient.json",
+      "bytes": 10319,
+      "sha256": "85f850a005e1f41a9aeb0ae400576cd62b28ef7d9fa46362edaff19680ac713c"
+    },
+    {
+      "path": "data/events.json",
+      "bytes": 19781,
+      "sha256": "5ecc93c09f728510deb278ef8e3161773f722e7a75dadcd5e62f32e4d8ee3d79"
+    },
+    {
+      "path": "docs/ASSET_SETUP.md",
+      "bytes": 1951,
+      "sha256": "b98711c7e4e866e11a7e45768e213371f0b05e040100fe80b8693447462b68cf"
+    },
+    {
+      "path": "docs/GITHUB_RELEASE.md",
+      "bytes": 5483,
+      "sha256": "a913c96cf97bd687411734f95b27c5eeaa092d1e0b388301e19e5313d4a7c1a6"
+    },
+    {
+      "path": "docs/PLATFORM_COOPERATION.md",
+      "bytes": 4568,
+      "sha256": "5ca4a9ea2dcad115d270b5616d39180c220c9425d172348e0b007ebbde1d615c"
+    },
+    {
+      "path": "docs/PROJECT.md",
+      "bytes": 18047,
+      "sha256": "e21dcc8249e3142c348cc6f2997ee93cc53cab74f33f1de7c7632a069446b52e"
+    },
+    {
+      "path": "docs/RELEASE_NOTES_v0.1.0-preview.md",
+      "bytes": 2015,
+      "sha256": "bbabaaddef955acd59623cdbec7de86b5522d74afdc7188f85687ea36a9ca5a5"
+    },
+    {
+      "path": "docs/screenshots/README.md",
+      "bytes": 217,
+      "sha256": "9df5571c96940dd8d91df4139ac5984c7ebaa0159c5190b6bb5644bc79916a5b"
+    },
+    {
+      "path": "docs/screenshots/choices-en.png",
+      "bytes": 487660,
+      "sha256": "f67e53e96bc7ca5590c43410c35990bf028e34b5e9c48aa460a5c33b9c0f3c9e"
+    },
+    {
+      "path": "docs/screenshots/choices-zh.png",
+      "bytes": 488028,
+      "sha256": "e086b63f326ecdaad973b1d8465e21155e3a6dd3172e4e279a0d7970a7a81189"
+    },
+    {
+      "path": "docs/screenshots/completed-zh.png",
+      "bytes": 521656,
+      "sha256": "17e4f563c830afa0be8f40593ee1ed53ba12c3bca9632be788e67dbd28b66767"
+    },
+    {
+      "path": "docs/screenshots/menu-en.png",
+      "bytes": 268939,
+      "sha256": "d259eeb2c3d844b8cdda5f9234de687245c71ef076a3b6a312bc8df5412bff33"
+    },
+    {
+      "path": "docs/screenshots/menu-zh.png",
+      "bytes": 274824,
+      "sha256": "3960ecae52f596d95ac8fa3c1013a5442f0f1afb56cf513c83e85e01eacc3115"
+    },
+    {
+      "path": "docs/screenshots/pause-zh.png",
+      "bytes": 382138,
+      "sha256": "0d81312a81ab848cc75cff4a7edfbb399ba6c85522fb222395acfe0db9a1afad"
+    },
+    {
+      "path": "licenses/FusionPixel-OFL.txt",
+      "bytes": 4418,
+      "sha256": "bc518cf64b8032c07690f33cc270c35c179255a6ac8efa7c165ebae7e8f76a63"
+    },
+    {
+      "path": "licenses/PressStart2P-OFL.txt",
+      "bytes": 4414,
+      "sha256": "a9a71896a5529847aef353d53b15f28d50dfacec1ce9ad58f7192239b981dbaf"
+    },
+    {
+      "path": "licenses/Python-LICENSE.txt",
+      "bytes": 33861,
+      "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120"
+    },
+    {
+      "path": "licenses/pygame-LGPL.txt",
+      "bytes": 26430,
+      "sha256": "a190dc9c8043755d90f8b0a75fa66b9e42d4af4c980bf5ddc633f0124db3cee7"
+    },
+    {
+      "path": "main.py",
+      "bytes": 11238,
+      "sha256": "0088085f698a1d80989c2253d1e7f627e38fedc56159aac75e3e63ebe3594089"
+    },
+    {
+      "path": "requirements-build.txt",
+      "bytes": 40,
+      "sha256": "38dabc627f6a8f795efee7436cb4c08410efd38eaf36ed2d1adddb7341a14875"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 14,
+      "sha256": "e7277bb5a0c03f2c4d5759ea2e139901be458794fbd8ff6194352ef9f39aba9d"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/audio_manager.py",
+      "bytes": 5487,
+      "sha256": "c9c0f1a41ac63b1281605aca7bbffda58fdfda7cf96f7b693296967ff93bbaf3"
+    },
+    {
+      "path": "src/config.py",
+      "bytes": 965,
+      "sha256": "fe0fb7fe30d4c859799182a392c4ed9a6eb2da0350858b2eefeeb2eaa22f51c7"
+    },
+    {
+      "path": "src/event_system.py",
+      "bytes": 8018,
+      "sha256": "917026b62b2937d6bc6244bb7b4d96abebafa42e743164e585842cc010e2714a"
+    },
+    {
+      "path": "src/font_manager.py",
+      "bytes": 2048,
+      "sha256": "db84fac331d158a0dc33dbf39ba8c4eb1fc728b7c04ef725e40123d1ee4177a8"
+    },
+    {
+      "path": "src/lang.py",
+      "bytes": 13106,
+      "sha256": "6d5702d2f7a9e3893b73da2521a1df2a708aa27825cc9cfb86a61b35a0cd705f"
+    },
+    {
+      "path": "src/metadata.py",
+      "bytes": 289,
+      "sha256": "fa2f0b9248d5c3e078e06eb9399723276ffccb6c0ddf794bac6fe5da70e0f2ad"
+    },
+    {
+      "path": "src/session.py",
+      "bytes": 3581,
+      "sha256": "0579420cf850d4d991f5891da7c91ccf289d2877de087f42703f282379ed510b"
+    },
+    {
+      "path": "src/sprite_engine.py",
+      "bytes": 5735,
+      "sha256": "6dd3090f47dc9c46df35f1e03cd7dd024395a50a8938c8a7c1095b869d1c7312"
+    },
+    {
+      "path": "src/state_manager.py",
+      "bytes": 6127,
+      "sha256": "d2586e0321f5cb5c6c3b8220ad2dcb5b22a3354b25b6269407590bc17197604c"
+    },
+    {
+      "path": "src/ui.py",
+      "bytes": 19893,
+      "sha256": "f493ffdcca1da326ded0162c579b3b9d85ae844cc2a83305f3b3e6f2c1711251"
+    },
+    {
+      "path": "tests/test_runtime_modules.py",
+      "bytes": 8935,
+      "sha256": "92f4d607aeb6a11eda311ec5c90844c0309105ba7714a8cd115439718abda50f"
+    },
+    {
+      "path": "tests/test_session.py",
+      "bytes": 6058,
+      "sha256": "735de47bcc88d139da30d4ceb0bea0f0ae7b33bf6350260c5ff26b1afee7c4db"
+    },
+    {
+      "path": "tests/test_ui_flow.py",
+      "bytes": 4351,
+      "sha256": "f288763de5ef804551b647871760c89854d123cf29e512f297067ba086ef759f"
+    },
+    {
+      "path": "tools/check_assets.py",
+      "bytes": 1155,
+      "sha256": "9080d3b8b4ba88a5c6b4d6a15aec73b8c81b28e6f40b51ecaba4a9fb13d10875"
+    },
+    {
+      "path": "tools/prepare_github.py",
+      "bytes": 4076,
+      "sha256": "3f7c6bda5235f34ce007135aab2ad24f68f5b7e18470d6d97ecdfb0cb2f58723"
+    },
+    {
+      "path": "tools/simulate_sessions.py",
+      "bytes": 2079,
+      "sha256": "bc04633efdadc4e032700edcebb4cb4e61a4f84ab1a23c37de8b630f53b44c69"
+    }
+  ]
+}

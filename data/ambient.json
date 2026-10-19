@@ -1,0 +1,87 @@
+{
+  "events": [
+
+    // ═══════════════════════════════════════
+    // NO RAIN
+    // ═══════════════════════════════════════
+
+    { "id": "ambient_keyboard",  "text": { "en": "Keyboard echoes in the room.", "zh": "键盘声在房间里回响。" }, "domain": "no_rain", "weight": 20 },
+    { "id": "ambient_coffee",   "text": { "en": "Coffee went cold again.", "zh": "咖啡又凉了。" }, "domain": "no_rain", "weight": 18 },
+    { "id": "ambient_code",     "text": { "en": "Staring at the screen.", "zh": "盯着屏幕发呆。" }, "domain": "no_rain", "weight": 18 },
+    { "id": "ambient_twitter",  "text": { "en": "Scrolled Twitter for a bit.", "zh": "刷了一会儿推特。" }, "domain": "no_rain", "weight": 14 },
+    { "id": "ambient_bug",      "text": { "en": "Remembered another bug.", "zh": "想起来还有一个 bug。" }, "domain": "no_rain", "weight": 12 },
+    { "id": "ambient_stack",    "text": { "en": "Found a useful answer.", "zh": "找到一个有用的回答。" }, "domain": "no_rain", "weight": 12, "sanity": 2 },
+    { "id": "ambient_refactor", "text": { "en": "Thinking about refactoring.", "zh": "看着代码想重构。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_youtube",  "text": { "en": "YouTube recommended a video.", "zh": "YouTube 推荐了一个视频。" }, "domain": "no_rain", "weight": 14 },
+    { "id": "ambient_cat_sleep","text": { "en": "The cat fell asleep on the desk.", "zh": "小橘在桌子上睡着了。" }, "domain": "no_rain", "weight": 16, "sanity": 2 },
+    { "id": "ambient_eye",      "text": { "en": "Eyes starting to hurt.", "zh": "眼睛开始发酸。" }, "domain": "no_rain", "weight": 12 },
+    { "id": "ambient_clock",    "text": { "en": "It's 3 AM.", "zh": "凌晨 3 点了。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_npm",      "text": { "en": "npm is still installing.", "zh": "npm 还在安装。" }, "domain": "no_rain", "weight": 8 },
+    { "id": "ambient_cursor",   "text": { "en": "Cursor is still blinking.", "zh": "光标还在闪。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_cicada",   "text": { "en": "Birds chirping outside.", "zh": "窗外传来鸟叫。" }, "domain": "no_rain", "weight": 12 },
+    { "id": "ambient_sigh",     "text": { "en": "Let out a sigh.", "zh": "叹了口气。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_tabs",     "text": { "en": "Too many tabs open.", "zh": "标签页已经开太多了。" }, "domain": "no_rain", "weight": 14 },
+    { "id": "ambient_terminal", "text": { "en": "Terminal still running.", "zh": "终端还在跑。" }, "domain": "no_rain", "weight": 16 },
+    { "id": "ambient_commit",   "text": { "en": "Maybe commit later.", "zh": "等会儿再 commit 吧。" }, "domain": "no_rain", "weight": 12 },
+    { "id": "ambient_typo",     "text": { "en": "Another typo.", "zh": "又打错字了。" }, "domain": "no_rain", "weight": 16 },
+    { "id": "ambient_doc",      "text": { "en": "Should have read the docs.", "zh": "早知道该先看文档。" }, "domain": "no_rain", "weight": 14 },
+    { "id": "ambient_build",    "text": { "en": "Build succeeded somehow.", "zh": "居然编译过了。" }, "domain": "no_rain", "weight": 8, "sanity": 3 },
+    { "id": "ambient_stretch",  "text": { "en": "Stretched a little.", "zh": "伸了个懒腰。" }, "domain": "no_rain", "weight": 12, "sanity": 1 },
+    { "id": "ambient_chair",    "text": { "en": "Chair creaked softly.", "zh": "椅子轻轻响了一下。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_reopen",   "text": { "en": "Closed the same tab twice.", "zh": "同一个标签页关了两次。" }, "domain": "no_rain", "weight": 10 },
+    { "id": "ambient_search",   "text": { "en": "Searching the same error again.", "zh": "又搜了一遍同样的报错。" }, "domain": "no_rain", "weight": 14 },
+    { "id": "ambient_compile",  "text": { "en": "still compiling...", "zh": "还在编译……" }, "domain": "no_rain", "weight": 8 },
+    { "id": "ambient_waiting",  "text": { "en": "waiting...", "zh": "等待中……" }, "domain": "no_rain", "weight": 8 },
+    { "id": "ambient_dots",     "text": { "en": "...", "zh": "……" }, "domain": "no_rain", "weight": 6 },
+    { "id": "ambient_fixed",    "text": { "en": "fixed it.", "zh": "修好了。" }, "domain": "no_rain", "weight": 6, "sanity": 3 },
+    { "id": "ambient_nvm",      "text": { "en": "never mind.", "zh": "算了。" }, "domain": "no_rain", "weight": 6 },
+
+    // ═══════════════════════════════════════
+    // RAIN
+    // ═══════════════════════════════════════
+
+    { "id": "ambient_rain_drop",  "text": { "en": "Raindrops tapping the window.", "zh": "雨滴敲打窗沿。" }, "domain": "rain", "weight": 25 },
+    { "id": "ambient_rain_warm",  "text": { "en": "The rain feels cozy.", "zh": "雨声让人安心。" }, "domain": "rain", "weight": 20, "sanity": 2 },
+    { "id": "ambient_rain_cat",   "text": { "en": "The cat listens to the rain.", "zh": "小橘听着雨声。" }, "domain": "rain", "weight": 18, "sanity": 2 },
+    { "id": "ambient_rain_cold",  "text": { "en": "The rain is getting colder.", "zh": "雨越下越冷。" }, "domain": "rain", "weight": 12 },
+    { "id": "ambient_rain_window","text": { "en": "The window is all fogged up.", "zh": "窗户上全是水雾。" }, "domain": "rain", "weight": 15 },
+    { "id": "ambient_rain_neon",  "text": { "en": "Neon lights blur in the rain.", "zh": "霓虹在雨里变得模糊。" }, "domain": "rain", "weight": 18 },
+    { "id": "ambient_rain_pause", "text": { "en": "Stopped typing for a while.", "zh": "停下敲键盘听了会儿雨。" }, "domain": "rain", "weight": 16 },
+    { "id": "ambient_rain_reflect","text": { "en": "Monitor glow reflects on the window.", "zh": "屏幕的光映在窗上。" }, "domain": "rain", "weight": 14 },
+    { "id": "ambient_rain_breath","text": { "en": "The room feels warmer than outside.", "zh": "屋里比窗外暖和一些。" }, "domain": "rain", "weight": 14, "sanity": 1 },
+    { "id": "ambient_rain_silence","text": { "en": "No cars outside anymore.", "zh": "外面已经没什么车了。" }, "domain": "rain", "weight": 10 },
+
+    // ═══════════════════════════════════════
+    // BOTH
+    // ═══════════════════════════════════════
+
+    { "id": "ambient_stare",    "text": { "en": "Staring at the screen.", "zh": "盯着屏幕发呆。" }, "domain": "both", "weight": 20 },
+    { "id": "ambient_music",    "text": { "en": "Music keeps looping.", "zh": "音乐还在循环。" }, "domain": "both", "weight": 16, "sanity": 1 },
+    { "id": "ambient_back",     "text": { "en": "Neck is getting sore.", "zh": "脖子有点酸。" }, "domain": "both", "weight": 12 },
+    { "id": "ambient_heat",     "text": { "en": "Fan is running.", "zh": "电脑风扇在转。" }, "domain": "both", "weight": 14 },
+    { "id": "ambient_blink",    "text": { "en": "Blinked.", "zh": "眨了眨眼。" }, "domain": "both", "weight": 12 },
+    { "id": "ambient_deep",     "text": { "en": "Took a deep breath.", "zh": "深呼吸。" }, "domain": "both", "weight": 10, "sanity": 2 },
+    { "id": "ambient_time",     "text": { "en": "Time passes quietly.", "zh": "时间安静地流过去。" }, "domain": "both", "weight": 14 },
+    { "id": "ambient_night",    "text": { "en": "Still awake.", "zh": "还醒着。" }, "domain": "both", "weight": 16 },
+    { "id": "ambient_room",     "text": { "en": "The room feels alive.", "zh": "房间像还醒着。" }, "domain": "both", "weight": 10 },
+    { "id": "ambient_wait",     "text": { "en": "The project can wait.", "zh": "项目可以再等等。" }, "domain": "both", "weight": 8, "sanity": 2 },
+    { "id": "ambient_light",    "text": { "en": "Only the monitor is bright.", "zh": "只有屏幕还亮着。" }, "domain": "both", "weight": 14 },
+    { "id": "ambient_idle",     "text": { "en": "Nothing happens for a while.", "zh": "有一会儿什么都没发生。" }, "domain": "both", "weight": 10 },
+    { "id": "ambient_presence", "text": { "en": "At least the cat is here.", "zh": "至少小橘还在。" }, "domain": "both", "weight": 12, "sanity": 3 },
+
+    // ═══════════════════════════════════════
+    // LOW SANITY
+    // ═══════════════════════════════════════
+
+    { "id": "ambient_repeat",    "text": { "en": "Didn't you already read this line?", "zh": "这行是不是刚刚已经看过了？" }, "sanity_max": 25, "weight": 14 },
+    { "id": "ambient_name",      "text": { "en": "Someone said your name.", "zh": "好像有人叫了你一声。" }, "sanity_max": 20, "weight": 12 },
+    { "id": "ambient_static",    "text": { "en": "Monitor flickered for a second.", "zh": "屏幕突然闪了一下。" }, "sanity_max": 22, "weight": 16 },
+    { "id": "ambient_memory",    "text": { "en": "Why are you still doing this?", "zh": "为什么还在继续做这个？" }, "sanity_max": 18, "weight": 10 },
+    { "id": "ambient_window",    "text": { "en": "Thought something moved outside.", "zh": "窗外像有什么动了一下。" }, "sanity_max": 20, "weight": 12 },
+    { "id": "ambient_time_lost", "text": { "en": "You lost track of time again.", "zh": "又忘记时间了。" }, "sanity_max": 25, "weight": 18 },
+    { "id": "ambient_paranoid",  "text": { "en": "Feels like someone is behind you.", "zh": "总觉得身后有人。" }, "sanity_max": 20, "weight": 20 },
+    { "id": "ambient_whisper",   "text": { "en": "Thought you heard something.", "zh": "好像听到了什么声音。" }, "sanity_max": 20, "weight": 18 },
+    { "id": "ambient_forget",    "text": { "en": "Forgot what you were about to do.", "zh": "忘了刚才想做什么。" }, "sanity_max": 20, "weight": 16 }
+
+  ]
+}
